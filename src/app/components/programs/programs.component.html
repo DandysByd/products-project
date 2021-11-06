@@ -1,0 +1,29 @@
+<div class="products">
+  <div *ngFor="let prog of programs; let i = index">
+    <h1 class="display-2">{{ prog.id }}</h1>
+    <p><em>{{prog.description}}</em></p>
+  </div>
+</div>
+<div class="table">
+  <table class="table table-bordered table-dark">
+    <tr class="head">
+      <th>Features</th>
+      <td>Delivery < 2 days</td>
+      <td>24/7 support</td>
+      <td>2 weeks insurance</td>
+      <td>Worldwide assistance</td>
+      <td>Another thing</td>
+      <td>Another thing 2</td>
+    </tr>
+    <tr *ngFor="let prog of programs; let i = index">
+      <th>{{ prog.id }}<br>{{ prog.yearPrice }}$/{{ prog.monthPrice }}$</th>
+      <td>{{ prog.features.delivery ? "✔" : "X" }}</td>
+      <td>{{ prog.features.support ? "✔" : "X" }}</td>
+      <td>{{ prog.features.insurance ? "✔" : "X" }}</td>
+      <td>{{ prog.features.assistance ? "✔" : "X" }}</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+  </table>
+</div>
+  

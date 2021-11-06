@@ -1,0 +1,303 @@
+{
+    "name": "Programs",
+    "description": "Sample client profitability rule",
+    "inputSchema": {
+        "Product": {
+            "ID": {},
+            "term": {}
+        }
+    },
+    "outputSchema": {
+        "Product": {
+            "ID": {},
+            "Price": {},
+            "Description": {},
+            "Features": {}
+        }
+    },
+    "decisionTable": {
+        "columns": [
+            {
+                "condition": {
+                    "type": "simple",
+                    "inputVariable": "Product.ID",
+                    "name": "Product ID"
+                },
+                "columnId": "b2d54eec-37ec-f229-729a-aa8585552613",
+                "type": "input"
+            },
+            {
+                "condition": {
+                    "type": "simple",
+                    "inputVariable": "Product.term",
+                    "name": "Term"
+                },
+                "columnId": "477835ca-1c11-cabf-a046-047279b9eddb",
+                "type": "input"
+            },
+            {
+                "columnOutput": {
+                    "type": "simple",
+                    "outputVariable": "Product.Price",
+                    "name": "Product price"
+                },
+                "columnId": "1991182e-70ef-0ec4-5867-8baec21a6c72",
+                "type": "output"
+            }
+        ],
+        "rows": [
+            {
+                "cells": [
+                    {
+                        "column": "b2d54eec-37ec-f229-729a-aa8585552613",
+                        "scalarCondition": {
+                            "value": "P1",
+                            "operator": "=",
+                            "type": "general"
+                        },
+                        "type": "input"
+                    },
+                    {
+                        "column": "477835ca-1c11-cabf-a046-047279b9eddb",
+                        "scalarCondition": {
+                            "value": "month",
+                            "operator": "containsText",
+                            "type": "general"
+                        },
+                        "type": "input"
+                    },
+                    {
+                        "column": "1991182e-70ef-0ec4-5867-8baec21a6c72",
+                        "outputScalarValue": {
+                            "value": "12",
+                            "type": "common"
+                        },
+                        "type": "output"
+                    }
+                ],
+                "active": true
+            },
+            {
+                "cells": [
+                    {
+                        "column": "b2d54eec-37ec-f229-729a-aa8585552613",
+                        "scalarCondition": {
+                            "value": "P1",
+                            "operator": "=",
+                            "type": "general"
+                        },
+                        "type": "input"
+                    },
+                    {
+                        "column": "477835ca-1c11-cabf-a046-047279b9eddb",
+                        "scalarCondition": {
+                            "value": "year",
+                            "operator": "containsText",
+                            "type": "general"
+                        },
+                        "type": "input"
+                    },
+                    {
+                        "column": "1991182e-70ef-0ec4-5867-8baec21a6c72",
+                        "outputScalarValue": {
+                            "value": "10",
+                            "type": "common"
+                        },
+                        "type": "output"
+                    }
+                ],
+                "active": true
+            },
+            {
+                "cells": [
+                    {
+                        "column": "b2d54eec-37ec-f229-729a-aa8585552613",
+                        "scalarCondition": {
+                            "value": "P2",
+                            "operator": "=",
+                            "type": "general"
+                        },
+                        "type": "input"
+                    },
+                    {
+                        "column": "477835ca-1c11-cabf-a046-047279b9eddb",
+                        "scalarCondition": {
+                            "value": "month",
+                            "operator": "containsText",
+                            "type": "general"
+                        },
+                        "type": "input"
+                    },
+                    {
+                        "column": "1991182e-70ef-0ec4-5867-8baec21a6c72",
+                        "outputScalarValue": {
+                            "value": "36",
+                            "type": "common"
+                        },
+                        "type": "output"
+                    }
+                ],
+                "active": true
+            },
+            {
+                "cells": [
+                    {
+                        "column": "b2d54eec-37ec-f229-729a-aa8585552613",
+                        "scalarCondition": {
+                            "value": "P2",
+                            "operator": "=",
+                            "type": "general"
+                        },
+                        "type": "input"
+                    },
+                    {
+                        "column": "477835ca-1c11-cabf-a046-047279b9eddb",
+                        "scalarCondition": {
+                            "value": "year",
+                            "operator": "containsText",
+                            "type": "general"
+                        },
+                        "type": "input"
+                    },
+                    {
+                        "column": "1991182e-70ef-0ec4-5867-8baec21a6c72",
+                        "outputScalarValue": {
+                            "value": "30",
+                            "type": "common"
+                        },
+                        "type": "output"
+                    }
+                ],
+                "active": true
+            },
+            {
+                "cells": [
+                    {
+                        "column": "b2d54eec-37ec-f229-729a-aa8585552613",
+                        "scalarCondition": {
+                            "value": "P3",
+                            "operator": "=",
+                            "type": "general"
+                        },
+                        "type": "input"
+                    },
+                    {
+                        "column": "477835ca-1c11-cabf-a046-047279b9eddb",
+                        "scalarCondition": {
+                            "value": "month",
+                            "operator": "containsText",
+                            "type": "general"
+                        },
+                        "type": "input"
+                    },
+                    {
+                        "column": "1991182e-70ef-0ec4-5867-8baec21a6c72",
+                        "outputScalarValue": {
+                            "value": "60",
+                            "type": "common"
+                        },
+                        "type": "output"
+                    }
+                ],
+                "active": true
+            },
+            {
+                "cells": [
+                    {
+                        "column": "b2d54eec-37ec-f229-729a-aa8585552613",
+                        "scalarCondition": {
+                            "value": "P3",
+                            "operator": "=",
+                            "type": "general"
+                        },
+                        "type": "input"
+                    },
+                    {
+                        "column": "477835ca-1c11-cabf-a046-047279b9eddb",
+                        "scalarCondition": {
+                            "value": "year",
+                            "operator": "containsText",
+                            "type": "general"
+                        },
+                        "type": "input"
+                    },
+                    {
+                        "column": "1991182e-70ef-0ec4-5867-8baec21a6c72",
+                        "outputScalarValue": {
+                            "value": "50",
+                            "type": "common"
+                        },
+                        "type": "output"
+                    }
+                ],
+                "active": true
+            },
+            {
+                "cells": [
+                    {
+                        "column": "b2d54eec-37ec-f229-729a-aa8585552613",
+                        "scalarCondition": {
+                            "value": "P4",
+                            "operator": "=",
+                            "type": "general"
+                        },
+                        "type": "input"
+                    },
+                    {
+                        "column": "477835ca-1c11-cabf-a046-047279b9eddb",
+                        "scalarCondition": {
+                            "value": "month",
+                            "operator": "containsText",
+                            "type": "general"
+                        },
+                        "type": "input"
+                    },
+                    {
+                        "column": "1991182e-70ef-0ec4-5867-8baec21a6c72",
+                        "outputScalarValue": {
+                            "value": "120",
+                            "type": "common"
+                        },
+                        "type": "output"
+                    }
+                ],
+                "active": true
+            },
+            {
+                "cells": [
+                    {
+                        "column": "b2d54eec-37ec-f229-729a-aa8585552613",
+                        "scalarCondition": {
+                            "value": "P4",
+                            "operator": "=",
+                            "type": "general"
+                        },
+                        "type": "input"
+                    },
+                    {
+                        "column": "477835ca-1c11-cabf-a046-047279b9eddb",
+                        "scalarCondition": {
+                            "value": "year",
+                            "operator": "containsText",
+                            "type": "general"
+                        },
+                        "type": "input"
+                    },
+                    {
+                        "column": "1991182e-70ef-0ec4-5867-8baec21a6c72",
+                        "outputScalarValue": {
+                            "value": "100",
+                            "type": "common"
+                        },
+                        "type": "output"
+                    }
+                ],
+                "active": true
+            }
+        ]
+    },
+    "type": "decision-table",
+    "status": "published",
+    "createdIn": "2021-11-05T09:58:20.318Z",
+    "lastUpdate": "2021-11-06T10:50:09.154Z"
+}

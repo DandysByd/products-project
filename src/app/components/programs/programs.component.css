@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(83, 65, 65);
+}
+td, th {
+  text-align: center;
+}
+table {
+  width: 100% !important;
+  height: 500px !important;
+}
+.table {
+  width: 50%;
+  float: left;
+  margin-left: 3%;
+  margin-top: 7%;
+}
+.products {
+  margin-top: 4%;
+  margin-left: 6%;
+  width: 30%;
+  float: left;
+  text-align: center;
+}
+.head th,td{
+    border-left: 1px solid black;
+}
